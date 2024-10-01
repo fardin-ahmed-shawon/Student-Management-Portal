@@ -5,10 +5,6 @@ Your Task is....
 2. When it's size will be 250px or less then,
    I want to align "Registered Course" text and "<select>" tag as two different lines.
 
-
-
-***************
 IF YOU WANT A EXTRA TASK
 then you can do it...........
-
-1. I am facing a screen sizing issue when my device will be 220px or less. You have to solve this issue.
+3. I am facing a screen sizing issue when my device will be 220px or less. You have to solve this issue.
