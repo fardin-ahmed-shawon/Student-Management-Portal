@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #E3E9F8;
+}
+.row {
+    display: flex;
+    align-items: center;
+    /* padding: 10px 0px; */
+}
+.col-mid-6 {
+    width: 50%;
+    float: left;
+}
+.card {
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    margin-top: 5px;
+    margin-left: 5px
+}
+.card-body {
+    padding: 1.25rem;
+}
+.table {
+    width: 100%;
+}
+table th {
+    text-align: left;
+}
+table td:nth-child(3),table   td:nth-child(5){
+    padding-left: 15px;
+}
+.table td,th {
+    padding: 5px;
+    border-top: 1px solid #dee2e6;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.font-bold {
+    font-weight: bold;
+}
+
+
+/**********************/
+/* START NAV SECTION */
+/********************/
+nav {
+    width: 100%;
+    height: 80px;
+    padding:  30px 100px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    float: left;
+}
+
+.profile-header {
+    width: 50%;
+    float: left;
+    text-align: right;
+    align-items: center;
+}
+.menu-btn{
+    width: 50%;
+    float: left;
+    text-align: right;
+    align-items: center;
+    display: none;
+}
+.menu-btn i, .hide-btn {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Profile Header */
+.logo img {
+    width: 200px;
+}
+
+.profile-photo {
+    display: inline-block;
+    background-color: rgb(178, 178, 178);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.profile-info {
+    display: inline-block;
+}
+
+.profile-info p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav Responsive */
+@media only screen and (max-width: 800px) {
+    nav {
+        padding:  30px 30px;
+    }
+}
+@media only screen and (max-width: 570px) {
+    nav {
+        padding:  30px 20px;
+    }
+}
+/********************/
+/* END NAV SECTION */
+/******************/
+
+
+
+
+/***********************/
+/* START HOME SECTION */
+/*********************/
+
+/* Start Layout */
+.wrapper {
+    height: 1200px;
+}
+.left-area {
+    width: 13%;
+    float: left;
+}
+
+.mid-area {
+    width: 67%;
+    float: left;
+}
+.right-area {
+    width: 20%;
+    float: left;
+}
+/* End Layout */
+
+
+/* Start Left area */
+.left-area {
+    height: 1200px;
+    background: #edf1fb;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 0px 6px -1px, rgba(0, 0, 0, 0.06) 0px 0px 4px -1px;
+}
+.left-area ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 20px 20px;
+}
+.left-area ul li a:hover {
+    color: #2b3c42;
+    background: #a7b5d2;
+}
+/* End Left area */
+
+.right-area a {
+    text-decoration: none;
+}
+.right-area a:active{
+    text-decoration: underline;
+}
+select {
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 10px 30px;
+    border: 1px solid #dadada;
+}
+
+
+/* Home Responsive */
+@media only screen and (max-width: 1350px) {
+    .left-area {
+        height: 212vh;
+        width: 20%;
+        float: left;
+    }
+    .mid-area {
+        width: 80%;
+        float: left;
+    }
+    .right-area {
+        width: 80%;
+        float: left;
+    }
+    .card {
+        margin-right: 5px;
+    }
+}
+/***********************/
+/* END HOME SECTION */
+/*********************/
+
+
+
+
+/**************************/
+/* Start MOBILE MENU BAR */
+/************************/
+.menu-container {
+    background: #edf1fb;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 0px 6px -1px, rgba(0, 0, 0, 0.06) 0px 0px 4px -1px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    display: none;
+}
+.hide-btn {
+    margin: 10px 20px;
+    text-align: right;
+}
+.profile-header2 {
+    margin: 10px 20px;
+}
+.profile-header2 .profile-info {
+    margin-top: 10px;
+}
+.menu-container ul li {
+    list-style-type: none;
+}
+.menu-container ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 20px 20px;
+}
+.menu-container ul li a:hover {
+    text-decoration: none;
+    background: #ccd4e4;
+}
+
+/* Responsive Mobile Menu */
+@media only screen and (max-width: 940px) {
+    .home .left-area {
+        display: none;
+    }
+    .mid-area {
+        width: 100%;
+        float: left;
+    }
+    .right-area {
+        width: 100%;
+        float: left;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .profile-header {
+        display: none;
+    }
+    .profile-photo {
+        display: block;
+    }
+    .card:last-child {
+        margin-bottom: 5px;
+    }
+}
+/************************/
+/* End MOBILE MENU BAR */
+/**********************/
+
+
+/* Fix Screen Sizing Issues for very low width devices */
+@media only screen and (max-width: 450px) {
+    table td , th{
+        font-size: 13px;
+    }
+    footer {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .logo img {
+        width: 170px;
+    }
+    .student-dp {
+        width: 50%;
+    }
+    select {
+        width: 100%;
+        padding: 0;
+    }
+    h2 {
+        margin-bottom: 15px;
+    }
+    h2, h3{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 250px) {
+    .logo img {
+        width: 150px;
+    }
+    /* select {
+
+    } */
+}
